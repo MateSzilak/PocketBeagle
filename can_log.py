@@ -12,6 +12,6 @@ can_interface = 'can0'
 bus = can.interface.Bus(can_interface,bustype='socketcan')
 
 for i in range(10000):
-	file.write( "%s" % bus.recv())
+	file.write( "%s\n" % bus.recv())
 	
 file.close
